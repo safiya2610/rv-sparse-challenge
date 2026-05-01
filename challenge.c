@@ -3,9 +3,9 @@
 #include <math.h>
 #include <time.h>
 
-// =========================================================
+
 // FUNCTION PROTOTYPE
-// =========================================================
+
 void sparse_multiply(
     int rows,
     int cols,
@@ -18,9 +18,8 @@ void sparse_multiply(
     double* y
 );
 
-// =========================================================
+
 // USER IMPLEMENTATION
-// =========================================================
 void sparse_multiply(
     int rows, int cols, const double* A, const double* x,
     int* out_nnz, double* values, int* col_indices, int* row_ptrs,
@@ -58,9 +57,9 @@ void sparse_multiply(
     }
 }
 
-// =========================================================
+
 // TEST HARNESS
-// =========================================================
+
 int main(void) {
     srand(time(NULL));
     
